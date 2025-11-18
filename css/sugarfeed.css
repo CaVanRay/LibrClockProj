@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*
+ * Example of RSS Ticker Styling
+ *
+ */
+
+.rssBody {
+	height: 35px;
+}
+
+.rssFeed {
+	font-size: 2.50em;
+	text-align: center;
+	font-family: arial;
+	
+	clear: both;
+	box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+/*	background-color: #0A2D3E; */
+/*	background-image: url("../images/feed_bg.png"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	
+    width: 90%;
+    margin: auto;
+	height: 70px;
+}
+
+.rssFeed ul {
+	margin-top: -10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;	
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;		
+}
+
+.rssFeed li {
+	color: #ffffff;
+	text-decoration: none;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 50px;
+	padding-left: 0px;	
+}
+.rssFeed a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.rssHeader { padding: 0.2em 0; }
+
+.rssRow h4, .rssRow p, .rssRow div {
+	margin: 0;
+	padding: 0.5em;
+}
+
+/*
+#sugarfeed {
+	overflow: hidden; 
+	position: relative; 
+	height: 130px; 
+	display: block; 
+}
+*/
+
+/*
+#sugarfeed .odd { background-color: #0A2D3E; }
+*/
+/*
+#sugarfeed .even { background-color: #0A2D3E; }
+ */
