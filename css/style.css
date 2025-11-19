@@ -591,9 +591,17 @@ display: table-row;
 }  
 
 #weather {
-  position: fixed; 
-  padding-top: 10px;
+  	position: fixed;
+  	bottom: 0;
+  	right: 0;
+  	padding-top: 10px;
  }
+
+#weatherFrame {
+	width: 300px;
+	height: 200px;
+	border: none;
+}
   
 .weather-grid {
   display: table;
