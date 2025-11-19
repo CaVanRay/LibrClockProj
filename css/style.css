@@ -597,11 +597,11 @@ display: table-row;
   	padding-top: 10px;
  }
 
-#weatherFrame {
+/* #weatherFrame {
 	width: 300px;
 	height: 200px;
 	border: none;
-}
+} */
   
 .weather-grid {
   display: table;
