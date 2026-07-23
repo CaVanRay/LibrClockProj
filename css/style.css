@@ -62,7 +62,7 @@ body {
 }
 
 /* Optional: Style specifically for the logo image if you add one */
-.logo-img img{
+.logo-img {
     max-height: 50px;
     width: auto;
     display: block;
