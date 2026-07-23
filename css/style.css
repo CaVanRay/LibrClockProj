@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle, #E0B0B0 0%, #803030 60%, #5D1A1A 100%);
+    background: radial-gradient(circle, #fff5d6 0%, #7c261d 45%, #500000 100%);
     height: 100vh;
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -19,7 +19,7 @@ body {
 
 /* 2. Main Container Card */
 .container {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 245, 214, 1);
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -63,7 +63,7 @@ body {
 
 /* Optional: Style specifically for the logo image if you add one */
 .logo-img {
-    max-height: 100px;
+    max-height: 300px;
     width: auto;
     display: block;
 }
