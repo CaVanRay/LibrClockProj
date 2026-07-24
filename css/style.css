@@ -65,14 +65,6 @@ body {
     color: #667eea;
 }
 
-/* Optional: Style specifically for the logo image if you add one 
-.logo-img {
-    max-height: 300px;
-    width: auto;
-    /* display: block;*/
-}
-*/
-
 /* 5. Responsive Adjustments for Mobile */
 @media (max-width: 480px) {
     .container {
