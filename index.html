@@ -87,7 +87,8 @@
                     getWeather(position.coords.latitude, position.coords.longitude);
                 },
                 () => {
-                    document.getElementById('weather').textContent = 'Location access denied.';
+                    getWeather(30.616525521761005, -96.33824115183701);
+                    // document.getElementById('weather').textContent = 'Location access denied.';
                 }
             );
         } else {
