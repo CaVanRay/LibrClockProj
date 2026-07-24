@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
- 
+
     <!-- Ensure these IDs match what your style.css targets -->
     <div class="container">
         <div id="date">Loading date...</div>
@@ -17,9 +17,7 @@
         <div class="info-row">
             <div id="temp">Loading temp...</div>
             <div id="weather">Loading weather...</div>
-        </div>
-        <div id="logo">
-            <img src="./assets/kyler.jpg" alt="Happy Kyler gets his Lubys" class="logo-img">
+            <div id="logo">Loading logo...</div>
         </div>
     </div>
 
@@ -56,22 +54,26 @@
 
         // 2. Fetch Weather
         async function getWeather(lat, lon) {
-            const apiKey = '49cf34d6340c72d6d00750b859b719be';
-            const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+            const apiKey = 'e1d748f65d4649f681d9a39f0c748380';
+            const url = `https://api.weatherbit.io/v2.0/current?key=${apiKey}&lat=${lat}&lon=${lon}&units=I`
 
             try {
                 const response = await fetch(url);
                 if (!response.ok) throw new Error('Weather data not found');
                 const data = await response.json();
                 
-                const condition = data.weather[0].description;
-                const temp = Math.round(data.main.temp);
-                const city = data.name;
+                const current = data.data[0];
+
+                const condition = current.weather.description;
+                const temp = Math.round(current.temp);
+                const city = current.city_name;
+                const iconCode = current.weather.icon;
+                const iconUrl = `https://www.weatherbit.io/static/img/icons/${iconCode}.png`;   
                 
-                // Updates the elements with IDs 'temp' & 'weather'
+                // Updates the elements with IDs 'temp', 'weather', & 'logo'
                 document.getElementById('temp').textContent = `${temp}°F`;
-                document.getElementById('weather').innerHTML = 
-                    `<strong>${city}</strong>: ${condition}`;
+                document.getElementById('weather').innerHTML = `${condition}`;
+                document.getElementById('logo').innerHTML = `<img src="${iconUrl}" alt="${condition}" style="vertical-align: middle;">`;
             } catch (error) {
                 document.getElementById('weather').textContent = 'Unable to fetch weather';
                 console.error(error);
