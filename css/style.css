@@ -24,24 +24,27 @@ body {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    min-width: 320px;
+    min-width: 1500px;
+    min-height: 700px;
     max-width: 90%;
     backdrop-filter: blur(10px);
 }
 
 /* 3. Date and Time Typography */
 #date {
-    font-size: 1.5rem;
+    font-size: 6rem;
     color: #555;
-    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-weight: 500;
 }
 
 #time {
-    font-size: 3rem;
+    font-size: 10rem;
     font-weight: 700;
     color: #2d3748;
-    margin-bottom: 0; /* Reset margin, spacing handled by info-row */
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Reset margin, spacing handled by info-row */
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -55,24 +58,20 @@ body {
     flex-wrap: wrap;         /* Wrap on small screens */
 }
 
-#temp, #weather {
+#temp, #weather, #logo-img{
+    display: block;
     text-align: center;
-    font-size: 1.1rem;
-    color: #4a5568;
+    font-size: 8rem;
+    color: #667eea;
 }
 
-/* Optional: Style specifically for the logo image if you add one */
+/* Optional: Style specifically for the logo image if you add one 
 .logo-img {
     max-height: 300px;
     width: auto;
-    display: block;
+    /* display: block;*/
 }
-
-/* Optional: Hover effect for the row items */
-#temp:hover, #weather:hover {
-    color: #667eea;
-    transition: color 0.2s ease;
-}
+*/
 
 /* 5. Responsive Adjustments for Mobile */
 @media (max-width: 480px) {
