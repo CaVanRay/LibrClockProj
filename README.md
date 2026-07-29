@@ -7,4 +7,4 @@ It just needs to provide some basic information accurately and not look terrible
 current iteration looks like this: 
 
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/570e6b4e-7cf9-454e-a022-adeb842d3d3a" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d328fd3d-d0d7-4bda-96db-82dc54269ab5" />
