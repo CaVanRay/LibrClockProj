@@ -6,5 +6,5 @@ It just needs to provide some basic information accurately and not look terrible
 
 current iteration looks like this: 
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/101c172d-cb44-4b15-9806-967284b5b292" />
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/d328fd3d-d0d7-4bda-96db-82dc54269ab5" />
