@@ -1,6 +1,6 @@
-This is my own attempt to make a digital clock to replace the old one
+Using my downtime to work on a digital clock to replace the old one
 
-I'm keeping it basic and bare bones.
+I'm keeping it bare bones.
 
 It just needs to provide some basic information accurately and not look terrible while doing it
 
